@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">T-Muslim</string>
+    <string name="schedule">schedule</string>
+    <string name="qibla">qibla</string>
+    <string name="calendar">calendar</string>
+    <string name="acoount">acoount</string>
 </resources>

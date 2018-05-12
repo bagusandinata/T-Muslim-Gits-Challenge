@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/schedule"
+        android:title="@string/schedule"
+        android:icon="@drawable/ic_schedule"/>
+
+    <item
+        android:id="@+id/qibla"
+        android:title="@string/qibla"
+        android:icon="@drawable/ic_qibla"/>
+
+    <item
+        android:id="@+id/calendar"
+        android:title="@string/calendar"
+        android:icon="@drawable/ic_calender"/>
+
+    <item
+        android:id="@+id/account"
+        android:title="@string/acoount"
+        android:icon="@drawable/ic_account"/>
+
+</menu>
