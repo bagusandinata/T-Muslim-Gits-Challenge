@@ -1,4 +1,4 @@
-package id.co.bagusandinata.t_muslim;
+package bagusandinata.t_muslim;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("id.co.bagusandinata.t_muslim", appContext.getPackageName());
+        assertEquals("bagusandinata.t_muslim", appContext.getPackageName());
     }
 }

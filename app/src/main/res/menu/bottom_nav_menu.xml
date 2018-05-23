@@ -17,8 +17,8 @@
         android:icon="@drawable/ic_calender"/>
 
     <item
-        android:id="@+id/account"
-        android:title="@string/acoount"
-        android:icon="@drawable/ic_account"/>
+        android:id="@+id/setting"
+        android:title="@string/setting"
+        android:icon="@drawable/ic_setting"/>
 
 </menu>

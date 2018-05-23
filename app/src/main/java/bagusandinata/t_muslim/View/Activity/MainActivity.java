@@ -1,13 +1,18 @@
-package id.co.bagusandinata.t_muslim;
+package bagusandinata.t_muslim.View.Activity;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import bagusandinata.t_muslim.View.Fragment.FragmentCalendar;
+import bagusandinata.t_muslim.View.Fragment.FragmentQibla;
+import bagusandinata.t_muslim.View.Fragment.FragmentSchedule;
+import bagusandinata.t_muslim.View.Fragment.FragmentSetting;
+import bagusandinata.t_muslim.R;
+
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
@@ -20,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
-
     }
 
     @Override
@@ -37,11 +41,16 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case R.id.calendar:
                 fragment = new FragmentCalendar();
                 break;
-            case R.id.account:
-                fragment = new FragmentAccount();
+            case R.id.setting:
+                fragment = new FragmentSetting();
                 break;
         }
         return initFragment(fragment);
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 
     private boolean initFragment(Fragment fragment){
@@ -54,5 +63,4 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
         return false;
     }
-
 }

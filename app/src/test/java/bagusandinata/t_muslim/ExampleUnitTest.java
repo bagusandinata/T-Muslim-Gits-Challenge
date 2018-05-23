@@ -1,4 +1,4 @@
-package id.co.bagusandinata.t_muslim;
+package bagusandinata.t_muslim;
 
 import org.junit.Test;
 

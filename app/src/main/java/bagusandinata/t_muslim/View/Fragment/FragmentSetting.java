@@ -1,4 +1,4 @@
-package id.co.bagusandinata.t_muslim;
+package bagusandinata.t_muslim.View.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,13 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FragmentAccount extends Fragment {
+import bagusandinata.t_muslim.R;
+
+public class FragmentSetting extends Fragment{
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_account, container, false);
-        return view;
+        return inflater.inflate(R.layout.fragment_setting, null);
     }
-
 }

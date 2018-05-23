@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="scheduleViewModel"
+            type="bagusandinata.t_muslim.ViewModel.ScheduleViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/section"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:background="@drawable/background_top_schedule">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Jumat, 10 Agustus 2018"
+                    android:textColor="#fff"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@{}"
+                    android:textColor="#fff"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:layout_gravity="center"
+                    android:text="subuh"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center"
+                    android:text="4.49"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center"
+                    android:text="- 1 jam 20 menit"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="173dp"
+                android:layout_height="138dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/logo_mosque"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/section">
+
+            <LinearLayout
+                android:id="@+id/subuh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorshubuh"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center|left"
+                    android:text="Subuh"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <TextView
+                    android:id="@+id/time_subuh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@{}"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="AM"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dhuhur"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colordhuhur"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center|left"
+                    android:text="Dhuhur"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <TextView
+                    android:id="@+id/time_dhuhur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@{}"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="AM"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ashar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorashar"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center|left"
+                    android:text="Ashar"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <TextView
+                    android:id="@+id/time_ashar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@{}"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="PM"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/maghrib"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colormaghrib"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center|left"
+                    android:text="Maghrib"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <TextView
+                    android:id="@+id/time_maghrib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@{}"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="PM"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/isya"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorisya"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center|left"
+                    android:text="Isya"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <TextView
+                    android:id="@+id/time_isya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@{}"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="PM"
+                    android:textAppearance="@style/TextSchedule"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>
